@@ -1,7 +1,8 @@
-body {
+body .liveStreams{
+  width:250px;
 	font-family: "Metrophobic", Arial, serif; 
 	font-weight: 400; 
-    padding: 20px;
+  padding: 20px;
 }
 
 h1 h2 h3 {
@@ -9,11 +10,11 @@ h1 h2 h3 {
 }
 
 .theStreams {
-  display: block;
+  display: inline-block;
 }
 
 .theStreams li {
-  display: block;
+  display: inline-block;
   width: 100%;
   padding: 10px 0;
   margin-bottom: 11px;
@@ -23,7 +24,7 @@ h1 h2 h3 {
 .theStreams li .thumbimg {
   width: 50px;
   height: 50px;
-  display: block;
+  display: inline-block;
   float: left;
   margin-right: 7px;
 }
@@ -34,10 +35,19 @@ h1 h2 h3 {
   width: 87%;
 }
 
+.theStreams h1 {
+  font-size: 20px;
+  color: #6441a5;
+}
 .theStreams li h2 {
-  font-size: 1.65em;
+  font-size: 12px;
   line-height: 1.1em;
   margin-bottom: 5px;
+}
+
+.theStreams li h3 {
+  font-size: 10px;
+  font-style: italic;
 }
 
 .theStreams li .blubtn {
@@ -58,13 +68,7 @@ h1 h2 h3 {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  background-color: #336699;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#336699), to(#395a7b));
-  background-image: -webkit-linear-gradient(top, #336699, #395a7b);
-  background-image: -moz-linear-gradient(top, #336699, #395a7b);
-  background-image: -ms-linear-gradient(top, #336699, #395a7b);
-  background-image: -o-linear-gradient(top, #336699, #395a7b);
-  background-image: linear-gradient(top, #336699, #395a7b);
+  background-color: #6441a5;
   -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.3), 0 2px 2px -1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.3) inset;
   -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.3), 0 2px 2px -1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.3) inset;
   box-shadow: 0 1px 0 rgba(0,0,0,0.3), 0 2px 2px -1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.3) inset;

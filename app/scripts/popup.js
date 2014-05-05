@@ -2,6 +2,7 @@
 
 $(document).ready(function(){ 
 		$.getJSON ("http://api.twitch.tv/api/team/solomid/live_channels.json", function(json) {
+			event.preventDefault();
 			var twitchData = json.channels;
 				console.log(twitchData);
 			var html = '<ul class="theStreams">\n';
@@ -20,7 +21,7 @@ $(document).ready(function(){
 				var thumbnail = obj.channel.image.size600;
 					
 				html += '<li class="clearfix">\n';
-				html += '<img src="' + thumbnail + '" class="thumbimg">\n';
+				html += '<img src="' + thumbnail + '" class="thumbimg">';
        			html += '<div class="linkdetails"><h1>' + streamer + '</h1>\n';
         		html += '<h2>' + streamTitle + '</h2>\n'
         		html += '<h3>' + game + '</h3>\n'
@@ -35,8 +36,8 @@ $(document).ready(function(){
 		function htmlOutput(html) {
     		html += '</ul>';
     
-   			 $('body').html(html);
+   			 $(".liveStreams").html(html);
   		}
 
-
+  	
 });
